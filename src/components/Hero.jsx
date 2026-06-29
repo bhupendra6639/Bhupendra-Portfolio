@@ -89,7 +89,7 @@ const Hero = () => {
         <div id="threejs-container-ANIMATION_1" style={{ width: '100%', height: '100%' }}></div>
       </div>
 
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100svh] py-32 lg:py-0 flex items-center justify-center overflow-x-hidden">
         <div className="relative z-10 max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div>
@@ -117,9 +117,7 @@ const Hero = () => {
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl animate-pulse"></div>
               <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-[0_0_40px_rgba(0,0,0,0.5)] rotate-3 transition-transform hover:rotate-0 duration-500 group">
-                {/* Overlay for duotone effect */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-secondary/60 mix-blend-overlay z-20 transition-opacity duration-500 group-hover:opacity-0"></div>
-                <img className="w-full h-full object-cover scale-110 grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-100" src="/assets/Bhupendra.webp" alt="Bhupendra Patil Profile" />
+                <img className="w-full h-full object-cover scale-100 transition-all duration-500 group-hover:scale-105" src="/assets/Bhupendra.webp" alt="Bhupendra Patil Profile" />
               </div>
             </div>
           </div>
