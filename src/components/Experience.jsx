@@ -3,7 +3,7 @@ import React from 'react';
 const Experience = () => {
   const experienceData = [
     {
-      company: 'Evonix',
+      company: 'Evonix Technology',
       role: 'Full Stack Developer',
       date: 'Feb 18, 2026 — Present',
       link: 'https://www.evonix.co/',
