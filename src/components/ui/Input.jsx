@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Input = ({ id, label, type = 'text', ...props }) => {
+const Input = ({ id, label, type = 'text', name, ...props }) => {
   return (
     <div className="relative">
       <input 
         id={id}
+        name={name || id}
         type={type}
         className="block w-full px-0 py-3 bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary peer transition-all" 
         placeholder=" " 

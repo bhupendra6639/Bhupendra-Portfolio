@@ -1,9 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Input from './ui/Input';
 import TextArea from './ui/TextArea';
 import Button from './ui/Button';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setResult("");
+    
+    const formData = new FormData(event.target);
+    formData.append("access_key", "13f133b2-6cce-41b4-b112-75f2d1b202de");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      
+      if (data.success) {
+        setResult("Success! Your message has been sent.");
+        event.target.reset();
+      } else {
+        setResult("Error: Something went wrong.");
+      }
+    } catch (error) {
+      setResult("Error: Failed to send message.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-section-gap px-gutter max-w-container-max mx-auto" id="contact">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -45,14 +77,19 @@ const Contact = () => {
         </div>
         
         <div className="reveal-on-scroll">
-          <form className="glass-panel p-8 md:p-10 rounded-2xl border border-primary/10">
+          <form onSubmit={onSubmit} className="glass-panel p-8 md:p-10 rounded-2xl border border-primary/10">
             <div className="space-y-6">
-              <Input id="name" label="Your Name" />
-              <Input id="email" label="Email Address" type="email" />
-              <TextArea id="message" label="Your Message" />
-              <Button type="submit" variant="submit">
-                Send Message
+              <Input id="name" name="name" label="Your Name" required />
+              <Input id="email" name="email" label="Email Address" type="email" required />
+              <TextArea id="message" name="message" label="Your Message" required />
+              <Button type="submit" variant="submit" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
+              {result && (
+                <p className={`font-label-mono text-label-mono mt-4 ${result.includes('Success') ? 'text-green-400' : 'text-red-400'}`}>
+                  {result}
+                </p>
+              )}
             </div>
           </form>
         </div>
