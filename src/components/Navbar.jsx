@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav className="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
         <div className="flex items-center gap-3">
           <img src="/assets/logo.png" alt="BP Logo" className="w-8 h-8 rounded-md" />
-          <div className="font-headline-md text-headline-md font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <div className="text-xl md:text-3xl font-display font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Bhupendra Patil
           </div>
         </div>

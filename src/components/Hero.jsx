@@ -113,10 +113,10 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="hidden lg:flex justify-end">
-            <div className="relative w-80 h-80">
+          <div className="flex justify-center lg:justify-end reveal-on-scroll" style={{ transitionDelay: '0.2s' }}>
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl animate-pulse"></div>
-              <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden glass-panel border border-primary/20 rotate-3">
+              <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden glass-panel border border-primary/20 rotate-3 transition-transform hover:rotate-0 duration-500">
                 <img className="w-full h-full object-cover" src="/assets/Bhupendra.webp" alt="Bhupendra Patil Profile" />
               </div>
             </div>
