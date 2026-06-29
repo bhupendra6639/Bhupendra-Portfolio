@@ -122,7 +122,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50">
+        <div className="absolute bottom-8 md:bottom-10 inset-x-0 w-full flex flex-col items-center justify-center gap-2 animate-bounce opacity-50 pointer-events-none">
           <span className="font-label-mono text-label-mono">Scroll</span>
           <span className="material-symbols-outlined">expand_more</span>
         </div>
