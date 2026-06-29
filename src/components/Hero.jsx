@@ -101,7 +101,7 @@ const Hero = () => {
             </div>
             <div className="glass-panel p-8 rounded-xl max-w-xl">
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Building high-performance web applications with a focus on modern architectures, scalable backends, and pixel-perfect user experiences. Turning complex problems into elegant code.
+                Engineering high-performance SaaS platforms and robust web architectures. Specialized in developing scalable RESTful APIs, integrating AI-driven solutions, and crafting pixel-perfect frontend experiences that drive business growth.
               </p>
             </div>
             <div className="flex gap-4 items-center">

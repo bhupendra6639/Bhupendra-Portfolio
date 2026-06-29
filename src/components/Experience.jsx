@@ -7,7 +7,7 @@ const Experience = () => {
       role: 'Full Stack Developer',
       date: 'Feb 18, 2026 — Present',
       link: 'https://www.evonix.co/',
-      description: 'Currently working as a Full Stack Developer, building robust web applications, optimizing databases, and engineering scalable frontend and backend architectures for modern solutions.',
+      description: 'Spearheading the development of modern web applications with a focus on scalable cloud architectures. Architecting secure backend systems, designing high-throughput REST APIs, and integrating AI workflows to automate business processes and enhance user engagement.',
       theme: 'primary'
     },
     {
@@ -15,7 +15,7 @@ const Experience = () => {
       role: 'Full Stack Developer',
       date: 'June 30, 2025 — Feb 15, 2026',
       link: '#',
-      description: 'Focused on end-to-end full stack development, creating seamless user interfaces and building highly secure and efficient RESTful API developments. Handled complex integrations and database management.',
+      description: 'Engineered robust full-stack solutions and modernized legacy codebases. Focused heavily on complex API development, third-party service integrations, and optimizing database schemas to reduce latency. Delivered seamless and highly interactive frontend UI components.',
       theme: 'secondary'
     }
   ];
