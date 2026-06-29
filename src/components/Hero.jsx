@@ -17,10 +17,10 @@ const Hero = () => {
 
       const geometry = new window.THREE.IcosahedronGeometry(2, 1);
       const material = new window.THREE.MeshPhongMaterial({
-          color: 0x06B6D4,
-          wireframe: true,
-          transparent: true,
-          opacity: 0.8
+        color: 0x06B6D4,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.8
       });
       const sphere = new window.THREE.Mesh(geometry, material);
       scene.add(sphere);
@@ -28,13 +28,13 @@ const Hero = () => {
       const particlesGeometry = new window.THREE.BufferGeometry();
       const particlesCount = 500;
       const posArray = new Float32Array(particlesCount * 3);
-      for(let i = 0; i < particlesCount * 3; i++) {
-          posArray[i] = (Math.random() - 0.5) * 10;
+      for (let i = 0; i < particlesCount * 3; i++) {
+        posArray[i] = (Math.random() - 0.5) * 10;
       }
       particlesGeometry.setAttribute('position', new window.THREE.BufferAttribute(posArray, 3));
       const particlesMaterial = new window.THREE.PointsMaterial({
-          size: 0.02,
-          color: 0xA855F7
+        size: 0.02,
+        color: 0xA855F7
       });
       const particlesMesh = new window.THREE.Points(particlesGeometry, particlesMaterial);
       scene.add(particlesMesh);
@@ -48,29 +48,29 @@ const Hero = () => {
       let mouseX = 0;
       let mouseY = 0;
       const handleMouseMove = (event) => {
-          mouseX = (event.clientX / window.innerWidth) - 0.5;
-          mouseY = (event.clientY / window.innerHeight) - 0.5;
+        mouseX = (event.clientX / window.innerWidth) - 0.5;
+        mouseY = (event.clientY / window.innerHeight) - 0.5;
       };
       window.addEventListener('mousemove', handleMouseMove);
 
       let animationId;
       function animate() {
-          animationId = requestAnimationFrame(animate);
-          sphere.rotation.x += 0.005;
-          sphere.rotation.y += 0.005;
-          particlesMesh.rotation.y += 0.001;
-          sphere.position.x += (mouseX * 2 - sphere.position.x) * 0.05;
-          sphere.position.y += (-mouseY * 2 - sphere.position.y) * 0.05;
-          renderer.render(scene, camera);
+        animationId = requestAnimationFrame(animate);
+        sphere.rotation.x += 0.005;
+        sphere.rotation.y += 0.005;
+        particlesMesh.rotation.y += 0.001;
+        sphere.position.x += (mouseX * 2 - sphere.position.x) * 0.05;
+        sphere.position.y += (-mouseY * 2 - sphere.position.y) * 0.05;
+        renderer.render(scene, camera);
       }
       animate();
 
       const handleResize = () => {
-          const newWidth = container.clientWidth || window.innerWidth;
-          const newHeight = container.clientHeight || window.innerHeight;
-          camera.aspect = newWidth / newHeight;
-          camera.updateProjectionMatrix();
-          renderer.setSize(newWidth, newHeight);
+        const newWidth = container.clientWidth || window.innerWidth;
+        const newHeight = container.clientHeight || window.innerHeight;
+        camera.aspect = newWidth / newHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(newWidth, newHeight);
       };
       window.addEventListener('resize', handleResize);
 
@@ -88,7 +88,7 @@ const Hero = () => {
       <div className="fixed inset-0 w-full h-full bg-transparent -z-10" style={{ display: 'block' }}>
         <div id="threejs-container-ANIMATION_1" style={{ width: '100%', height: '100%' }}></div>
       </div>
-      
+
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="relative z-10 max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -101,7 +101,7 @@ const Hero = () => {
             </div>
             <div className="glass-panel p-8 rounded-xl max-w-xl">
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Engineering high-performance SaaS platforms and robust web architectures. Specialized in developing scalable RESTful APIs, integrating AI-driven solutions, and crafting pixel-perfect frontend experiences that drive business growth.
+                Building high-performance web applications with a focus on modern architectures, scalable backends, and pixel-perfect user experiences. Turning complex problems into elegant code.
               </p>
             </div>
             <div className="flex gap-4 items-center">

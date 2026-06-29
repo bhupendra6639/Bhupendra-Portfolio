@@ -9,9 +9,9 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8 reveal-on-scroll">
           <div>
-            <h2 className="font-display-mobile md:font-display md:text-display text-on-surface mb-6 leading-tight">Let's Build <br/><span className="text-secondary">Something Epic</span></h2>
+            <h2 className="font-display-mobile md:font-display md:text-display text-on-surface mb-6 leading-tight">Let's Build <br/><span className="text-secondary">The Future</span></h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-              Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and technical challenges.
+              Looking to architect a scalable SaaS platform, integrate AI into your workflow, or build high-performance APIs? Let's discuss how we can turn your complex technical challenges into reality.
             </p>
           </div>
           <div className="flex flex-col gap-6">
