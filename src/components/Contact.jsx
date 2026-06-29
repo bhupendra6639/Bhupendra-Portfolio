@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-section-gap px-gutter max-w-container-max mx-auto" id="contact">
+    <section className="py-16 md:py-24 lg:py-[8rem] px-gutter max-w-container-max mx-auto" id="contact">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8 reveal-on-scroll">
           <div>

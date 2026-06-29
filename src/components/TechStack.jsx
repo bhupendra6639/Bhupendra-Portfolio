@@ -20,7 +20,7 @@ const TechStack = () => {
   ];
 
   return (
-    <section className="py-section-gap bg-surface-container-lowest" id="stack">
+    <section className="py-16 md:py-24 lg:py-[8rem] bg-surface-container-lowest" id="stack">
       <div className="max-w-container-max mx-auto px-gutter">
         <div className="flex flex-col items-center mb-16 text-center">
           <h2 className="font-headline-lg text-headline-lg mb-4">Core Technology Stack</h2>

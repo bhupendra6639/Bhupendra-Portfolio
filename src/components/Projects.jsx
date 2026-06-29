@@ -27,7 +27,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-section-gap px-gutter max-w-container-max mx-auto" id="work">
+    <section className="py-16 md:py-24 lg:py-[8rem] px-gutter max-w-container-max mx-auto" id="work">
       <div className="flex flex-col items-center mb-16 text-center">
         <h2 className="font-headline-lg text-headline-lg mb-4">Featured Work</h2>
         <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">

@@ -21,7 +21,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-section-gap px-gutter max-w-container-max mx-auto" id="experience">
+    <section className="py-16 md:py-24 lg:py-[8rem] px-gutter max-w-container-max mx-auto" id="experience">
       <div className="flex flex-col items-center mb-16 text-center">
         <h2 className="font-headline-lg text-headline-lg mb-4">Professional Journey</h2>
         <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
