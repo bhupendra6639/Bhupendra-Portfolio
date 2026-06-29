@@ -16,7 +16,7 @@ const TechStack = () => {
     { name: 'GitHub', icon: 'integration_instructions' },
     { name: 'Express.js', icon: 'account_tree' },
     { name: 'FastAPI', icon: 'bolt' },
-    { name: 'ORM (Prisma/TypeORM)', icon: 'schema' },
+    { name: 'ORM', icon: 'schema' },
   ];
 
   return (
