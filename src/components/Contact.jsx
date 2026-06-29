@@ -21,7 +21,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="font-label-mono text-label-mono text-on-surface-variant">Email</p>
-                <p className="font-body-md text-body-md font-bold">hello@evonix.co</p>
+                <p className="font-body-md text-body-md font-bold">bhupendrpatil6639@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4 group">
@@ -30,18 +30,15 @@ const Contact = () => {
               </div>
               <div>
                 <p className="font-label-mono text-label-mono text-on-surface-variant">Location</p>
-                <p className="font-body-md text-body-md font-bold">Remote / India</p>
+                <p className="font-body-md text-body-md font-bold">Pune, Hinjewadi</p>
               </div>
             </div>
           </div>
           <div className="flex gap-4">
-            <a className="w-10 h-10 glass-panel rounded-lg flex items-center justify-center hover:text-primary transition-all border border-outline-variant/30" href="#">
-              <span className="material-symbols-outlined">link</span>
-            </a>
-            <a className="w-10 h-10 glass-panel rounded-lg flex items-center justify-center hover:text-primary transition-all border border-outline-variant/30" href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a className="w-10 h-10 glass-panel rounded-lg flex items-center justify-center hover:text-primary transition-all border border-outline-variant/30" href="https://github.com/bhupendra6639" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined">terminal</span>
             </a>
-            <a className="w-10 h-10 glass-panel rounded-lg flex items-center justify-center hover:text-primary transition-all border border-outline-variant/30" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a className="w-10 h-10 glass-panel rounded-lg flex items-center justify-center hover:text-primary transition-all border border-outline-variant/30" href="https://www.linkedin.com/in/bhupendrpatil" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined">share</span>
             </a>
           </div>

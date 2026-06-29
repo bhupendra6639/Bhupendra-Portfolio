@@ -4,8 +4,11 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-200">
       <nav className="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-        <div className="font-headline-md text-headline-md font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          DevMastery
+        <div className="flex items-center gap-3">
+          <img src="/assets/logo.png" alt="BP Logo" className="w-8 h-8 rounded-md" />
+          <div className="font-headline-md text-headline-md font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Bhupendra Patil
+          </div>
         </div>
         <div className="hidden md:flex gap-8 items-center">
           <a className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md transition-all" href="#work">Work</a>

@@ -93,7 +93,7 @@ const Hero = () => {
         <div className="relative z-10 max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div>
-              <span className="font-label-mono text-label-mono text-secondary uppercase tracking-[0.2em] block mb-4">Available for new opportunities</span>
+              <span className="font-label-mono text-label-mono text-secondary uppercase tracking-[0.2em] block mb-4">Hi, I'm Bhupendra Patil</span>
               <h1 className="font-display text-display text-on-surface leading-none mb-6">
                 Full-Stack <br />
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Developer</span>
@@ -117,7 +117,7 @@ const Hero = () => {
             <div className="relative w-80 h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl animate-pulse"></div>
               <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden glass-panel border border-primary/20 rotate-3">
-                <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=600&auto=format&fit=crop" alt="Profile" />
+                <img className="w-full h-full object-cover" src="/assets/Bhupendra.webp" alt="Bhupendra Patil Profile" />
               </div>
             </div>
           </div>
