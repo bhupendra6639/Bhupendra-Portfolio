@@ -116,8 +116,10 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end reveal-on-scroll" style={{ transitionDelay: '0.2s' }}>
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl animate-pulse"></div>
-              <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden glass-panel border border-primary/20 rotate-3 transition-transform hover:rotate-0 duration-500">
-                <img className="w-full h-full object-cover" src="/assets/Bhupendra.webp" alt="Bhupendra Patil Profile" />
+              <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-primary/50 shadow-[0_0_40px_rgba(0,0,0,0.5)] rotate-3 transition-transform hover:rotate-0 duration-500 group">
+                {/* Overlay for duotone effect */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-secondary/60 mix-blend-overlay z-20 transition-opacity duration-500 group-hover:opacity-0"></div>
+                <img className="w-full h-full object-cover scale-110 grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-100" src="/assets/Bhupendra.webp" alt="Bhupendra Patil Profile" />
               </div>
             </div>
           </div>
