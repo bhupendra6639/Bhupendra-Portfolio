@@ -105,9 +105,9 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex gap-4 items-center">
-              <button className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-bold px-8 py-4 rounded-lg flex items-center gap-2 transition-all neon-glow-primary active:scale-95">
+              <a href="/assets/pdf/Bhupendra__Patil__Resume.pdf" download="Bhupendra_Patil_Resume.pdf" className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-bold px-8 py-4 rounded-lg flex items-center gap-2 transition-all neon-glow-primary active:scale-95">
                 <span className="material-symbols-outlined">download</span> Download Resume
-              </button>
+              </a>
               <button className="border border-secondary text-secondary font-bold px-8 py-4 rounded-lg hover:bg-secondary/10 transition-all active:scale-95">
                 View Portfolio
               </button>

@@ -3,12 +3,6 @@ import React from 'react';
 const Card = ({ title, description, image, tags = [], link = '#' }) => {
   return (
     <div className="glass-panel rounded-2xl overflow-hidden flex flex-col reveal-on-scroll group">
-      <div className="h-56 w-full overflow-hidden relative">
-        <div 
-          className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" 
-          style={{ backgroundImage: `url('${image}')` }}
-        ></div>
-      </div>
       <div className="p-6 flex-1 flex flex-col">
         <div className="flex gap-2 mb-4">
           {tags.map((tag, index) => (

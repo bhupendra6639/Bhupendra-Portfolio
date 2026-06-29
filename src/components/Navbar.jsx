@@ -16,9 +16,9 @@ const Navbar = () => {
           <a className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#stack">Stack</a>
           <a className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contact">Contact</a>
         </div>
-        <button className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-bold px-6 py-2 rounded-full active:scale-95 transition-all duration-200 neon-glow-primary">
+        <a href="mailto:bhupendrpatil6639@gmail.com" className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-bold px-6 py-2 rounded-full active:scale-95 transition-all duration-200 neon-glow-primary">
           Hire Me
-        </button>
+        </a>
       </nav>
     </header>
   );
