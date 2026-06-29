@@ -108,9 +108,9 @@ const Hero = () => {
               <a href="/assets/pdf/Bhupendra__Patil__Resume.pdf" download="Bhupendra_Patil_Resume.pdf" className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-bold px-8 py-4 rounded-lg flex items-center gap-2 transition-all neon-glow-primary active:scale-95">
                 <span className="material-symbols-outlined">download</span> Download Resume
               </a>
-              <button className="border border-secondary text-secondary font-bold px-8 py-4 rounded-lg hover:bg-secondary/10 transition-all active:scale-95">
-                View Portfolio
-              </button>
+              <a href="/assets/pdf/Bhupendra__Patil__Resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-secondary text-secondary font-bold px-8 py-4 rounded-lg hover:bg-secondary/10 transition-all active:scale-95 flex items-center justify-center">
+                View Resume
+              </a>
             </div>
           </div>
           <div className="flex justify-center lg:justify-end reveal-on-scroll" style={{ transitionDelay: '0.2s' }}>
