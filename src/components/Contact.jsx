@@ -24,7 +24,7 @@ const Contact = () => {
       const data = await response.json();
       
       if (data.success) {
-        setResult("Success! Your message has been sent.");
+        setResult("Success! Thank you for connecting. I will get back to you soon.");
         event.target.reset();
       } else {
         setResult("Error: Something went wrong.");
@@ -86,9 +86,12 @@ const Contact = () => {
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
               {result && (
-                <p className={`font-label-mono text-label-mono mt-4 ${result.includes('Success') ? 'text-green-400' : 'text-red-400'}`}>
-                  {result}
-                </p>
+                <div className={`mt-6 p-4 rounded-xl border flex items-start gap-3 ${result.includes('Success') ? 'bg-green-500/10 border-green-500/30 text-green-400' : 'bg-red-500/10 border-red-500/30 text-red-400'} animate-fade-in`}>
+                  <span className="material-symbols-outlined shrink-0">{result.includes('Success') ? 'check_circle' : 'error'}</span>
+                  <p className="font-body-md text-body-md pt-0.5">
+                    {result.replace('Success! ', '')}
+                  </p>
+                </div>
               )}
             </div>
           </form>
