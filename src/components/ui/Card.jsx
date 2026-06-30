@@ -6,8 +6,8 @@ const Card = ({ title, description, image, tags = [], link = '#' }) => {
       <div className="p-6 flex-1 flex flex-col">
         <div className="flex gap-2 mb-4">
           {tags.map((tag, index) => (
-            <span 
-              key={index} 
+            <span
+              key={index}
               className={`px-2 py-1 rounded text-xs font-label-mono ${index % 2 === 0 ? 'bg-primary/10 text-primary' : 'bg-secondary/10 text-secondary'}`}
             >
               {tag}

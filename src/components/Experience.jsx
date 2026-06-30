@@ -28,13 +28,13 @@ const Experience = () => {
       </div>
       <div className="relative max-w-4xl mx-auto">
         <div className="absolute left-0 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-outline-variant/30"></div>
-        
+
         {experienceData.map((exp, index) => {
           const isEven = index % 2 === 0;
           const alignRight = isEven ? 'md:flex-row' : 'md:flex-row-reverse';
           const textRight = isEven ? 'text-right pr-12' : 'text-left pl-12';
           const paddingClass = isEven ? 'md:pl-12 pl-8' : 'md:pr-12 pl-8';
-          
+
           return (
             <div key={index} className={`relative mb-16 md:mb-24 flex flex-col ${alignRight} items-center w-full reveal-on-scroll`}>
               <div className={`hidden md:block w-1/2 ${textRight}`}>
@@ -72,7 +72,7 @@ const Experience = () => {
             </div>
           );
         })}
-        
+
       </div>
     </section>
   );
